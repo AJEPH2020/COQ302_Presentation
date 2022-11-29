@@ -1,0 +1,85 @@
+basic terminologies - बुनियादी शब्दावली (boolean algebra)
+
+यह प्रस्तुति किस बारे में है?
+बूलियन बीजगणित	
+	- तार्किक संचालन
+	- डी मॉर्गन का नियम
+	- कन्सेंसस प्रमेय
+सकारात्मक आंकड़े
+	- प्राचीन रोमन और भारतीय संख्या प्रणाली
+	- विभिन्न आधारों में संख्या प्रणाली
+	- बायनरी संख्या प्रणाली	
+	- हेक्साडेसिमल और औक्टल संख्याऐं
+Slide-1
+Sabhi ko mera namaskar, aaj mai aryan gaurav aur mere dost atul jeph, pradhyapak smruti ranjan sarangi dwara, bits ki bhasha par diye gye vyakhyan 2.1 par prastuti dene jaa rhe hain.
+Slide-2
+Shuru karne se pehle hm ye dekh lete hain ki yah prastuti kis baare me hai. Jaisa ki aap dekh skte hain, hm shuru karenge boolean beejganit ki oor (direction) se. isse boolean algebra bhi kehte hain. Isme sabse pehle hm dekhenge tarthik sanchalan jisse hm logical operations bhi kehte hain. phir hm badhenge de morgan ke niyamo ki taraf. aur boolean beejganit ki samaapti hogi sarvsammati pramey par jisse hm consensus theorem bhi kehte hain. Iske baad mere mitr atul, aapko le chalenge dhannatmk pornaankon ki oor. Isse hm angreji me positive integers ke naam se bhi jaante hain. Yahan, shuruwat hogi pracheen roman eiwam (aur)  bhartiya sankhya pranali se. phir hm dekhenge kaise sankhyanon ka vivran vibhinn aadharon me kia jaata h. iske baad hm dekhenge binary sankhya pranali. aur yah prastuti khatm hogi hexadecimal eiwam (aur) octal number system ke baare me thodi jaankari dete hue.  
+
+Toh chaliye shuru karte hain.
+Slide-3
+Sabse pehle hm ye dekhte hain ki computer kon si bhasha samajhta h
+Before reading 3rd point- aur yahin par compiler apni bhoomika nibhata hai. 
+After reading 3rd point- yaani ki, hm apne samjhne yogy bhasha me computer ko nirdesh dete hain aur compiler, usse computer samjhne yogy bhasha me parivartit karta h taaki computer cheezien smjh ske aur hme hamare ikchha anusaar nateeje de ske.
+Ab hm boolean beej ganit ki shabdawali pe thoda gaur kar lete hain. Jaisa ki aap dekh skte hain: 1 bit kewal do me se ek mooly hin le skta h. Ya toh 0 ya phir 1.
+Phir aata h ek byte jiska mooly 8 bits ke barabar hota h.
+sabd (word)
+-- 1024, 2^10 ke barabar hota h, aur chuki computer ki duniya kewal 2 moolyon ke ird gird ghumti h (0,1), kilo ko hm 1024 se hin sambodhit karte hain, na ki 10^3.  mahatwpoorn
+--megabyte
+Slide-4
+Ab hm taarthik sanchaalan, yani ki logical operations ki oor bhadte hain.
+Sabse pehle gaur karne ki baat ye hai ki ek boolean chr (variable), kewal bits ke 2 me se ek hin mooly le skta h, 0, yani ki false, ya 1, yani ki true.
+Phir aati h saty taalika, yani ki truth table. 
+Yaani ki, ek table jisme diye gye input chr, variables ke saare combinations ke liye ek output maan zarur ho. 
+Pratyek truth table, apne aap me, ek function ko represent karta h. Ab aise kitne function ho skte hain, ye hm aage dekhenge.
+Ab truth table ke baad, taarthik sanchaalan me pehle do buniyaadi sanchalak, yani ki operators jo hote hain, wo hain OR eiwam AND.
+jaisa ki aap slide ke baayein taraf dekh skte hain, hamare pass hain 2 truth table, OR eiwam AND sanchalakon ko darshaane ke liye.
+OR ka matlab hota h , ya.
+A ya B me se koi bhi true hua toh output bhi true hoga. AUr agar dono false hue toh output bhi false hoga.
+AND ka matlab hota h aur.
+Matlab agar A aur B dono hin true hai, tabhi ouput true hoga nahi toh false.
+
+Slide-5
+Ab hm badhte hain apne agle sanchalakon ki oor, NAND and NOR
+NAND matlab AND ka ulta  (compliment me keh skte hain)
+aur NOR maltab OR ka ulta
+jaisa ki aap slide ke baayein taraf dekh skte hain, 2 truth table, NAND eiwam NOR ke liye bana rakhi hain.
+Inke baare me baat karne se pehle, ek baar ye dekh lete hain ki boolean function kise kehte hain. 
+Boolean function hamara wahi function hai jiske baare me hum truth table ki vyakhya karte samay baat kar rhe the. Ek truth table issi function ko represent karta h. Ab, function kul 2^n sanyojanon ke liye alag alag mooly leta h, aur ye mooly bhi set 0,1 se hin aa sktte hain . yaani ki har mooly ke pass 2 vikalp hain aur aise kul 2^n sankhyayein hain. toh, kul milakar kuch 2^ (2^n) alag alag functions sambhaw hain. 
+Ab yahin se ek baat nikl kar aati h ki NAND eiwam NOR... yaani universal operations. 
+pratinidhwa - represent
+lekin iska pramaan dena ,filhal humari Prastuti ke daayre ke baahar hai.
+ 
+Slide-6
+ab XOR praichaalan ka mooly kaise nikaalte hain.?
+
+Slide-7
+poorak sanchaalak, isse compliment operator bhi kehte hain
+Ab OR eiwam AND sanchalakon ki kuch visheshtayein bhi dekh lete hain.
+ek hoti h identity, dusri annulment.
+
+Slide -8: 
+boolean algebra ke kuch gun
+
+Slide-9:
+Jaise, pehli aakriti me aap dekh skte hain, kis tarah se A,B,C ke pratyek sanyojan ke liye A.(B+C) eiwam A.B + A.C ke mooly nikaale gye hain.
+inn dono columns ko red color se highlight kia gya h
+
+Slide-10
+ab do important niyam, jo boolean beej ganit ki duniya me kaafi istemaal kiye jaate hain. 
+ye de morgan's laws se bhi jaane jaate hain.
+sabse pehla niyam kehta h:
+
+Slide-11:
+ab boolean beej ganit ki samaapti hm ek aakhri pramey se karenge, jiska naam h sarvsammati pramey. Isse hm consensus theorem bhi kehte hain.
+Ye theorem kehta h ki:
+yahan par aap dekh skte hain ki Y.Z ka term gayab ho gya h, ab ye kaise hua, ye hm iss pramey ke pamaan se dekh skte hain:
+Hmne taarthik sanchaalan me AND sanchalak ki identity property dekhi thi ki A.1=A hin hota h. Y.Z.1. 
+next, complimentarity , X+ X bar
+next, distributivity, y.z (x+x bar)=...
+next, 1st and third term se common lete hain,
+aur 2nd and fourth term se.
+next, annulment property, 1+Z =Z
+finally, identity property.
+
+Issi ke hm sath boolean beej ganit par charcha khatm karte hain aur ab mere mitr, atul, aapko dhannatmak poornaankon ki oor le jayenge. Atul.  
+
